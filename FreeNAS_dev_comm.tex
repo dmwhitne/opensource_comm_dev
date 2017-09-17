@@ -1,0 +1,146 @@
+\documentclass[10pt,false,letter]{article}
+
+\usepackage{fullpage}
+\usepackage{setspace}
+\usepackage{parskip}
+\usepackage{titlesec}
+\usepackage{xcolor}
+\usepackage{lineno}
+
+
+
+
+
+\PassOptionsToPackage{hyphens}{url}
+\usepackage[colorlinks = true,
+            linkcolor = blue,
+            urlcolor  = blue,
+            citecolor = blue,
+            anchorcolor = blue]{hyperref}
+\usepackage{etoolbox}
+\makeatletter
+\patchcmd\@combinedblfloats{\box\@outputbox}{\unvbox\@outputbox}{}{%
+  \errmessage{\noexpand\@combinedblfloats could not be patched}%
+}%
+\makeatother
+
+
+\usepackage[round]{natbib}
+\let\cite\citep
+
+
+\renewenvironment{abstract}
+  {{\bfseries\noindent{\large\abstractname}\par\nobreak}}
+  {}
+
+\renewenvironment{quote}
+  {\begin{tabular}{|p{13cm}}}
+  {\end{tabular}}
+
+\titlespacing{\section}{0pt}{*3}{*1}
+\titlespacing{\subsection}{0pt}{*2}{*0.5}
+\titlespacing{\subsubsection}{0pt}{*1.5}{0pt}
+
+
+\usepackage{authblk}
+
+
+\usepackage{graphicx}
+\usepackage[space]{grffile}
+\usepackage{latexsym}
+\usepackage{textcomp}
+\usepackage{longtable}
+\usepackage{tabulary}
+\usepackage{booktabs,array,multirow}
+\usepackage{amsfonts,amsmath,amssymb}
+\providecommand\citet{\cite}
+\providecommand\citep{\cite}
+\providecommand\citealt{\cite}
+% You can conditionalize code for latexml or normal latex using this.
+\newif\iflatexml\latexmlfalse
+\providecommand{\tightlist}{\setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}%
+
+\DeclareGraphicsExtensions{.pdf,.PDF,.png,.PNG,.jpg,.JPG,.jpeg,.JPEG}
+
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+
+
+
+
+
+
+
+
+\begin{document}
+
+\title{FreeNAS - Development \& Community}
+
+
+
+\author[1]{Devin M Whitney}%
+\affil[1]{North Carolina State University}%
+
+
+\vspace{-1em}
+
+
+
+  \date{\today}
+
+
+\begingroup
+\let\center\flushleft
+\let\endcenter\endflushleft
+\maketitle
+\endgroup
+
+
+
+
+
+
+
+
+
+
+\section*{FreeNAS - Development \&
+Community}\label{freenas---development-community}
+
+FreeNAS is an open source software appliance that manages a network
+attached storage device (NAS). It helps share files through a number of
+protocols, including support for Windows, Mac OS X, and Unix of course.
+it does not function as a normal operating system like Windows 10 or
+Ubuntu, which helps it to be lightweight on the install drive. Plugins
+are available that provide more features for the NAS, such as creating a
+Minecraft server, Plex Media server, bit torrent downloader, and many
+more. Different plugins can be made by the community, so the
+possibilities are endless.
+
+\begin{itemize}
+\tightlist
+\item
+  FreeNAS is an active project licensed under the BSD License which is
+  approved by the OSI and FSF
+\item
+  There is a website that allows you to submit a bug and view changes
+\item
+  Feature requests are made in the FreeNAS community forums
+\item
+  The latest source code is available on the FreeNAS GitHub
+\item
+  You can learn about contributing to the project, and contact the
+  developers through the community forum
+\item
+  iX Systems provides FreeNAS training through ``iX University'' online
+\item
+  iX Systems has commercial support for the storage devices that they
+  create
+\end{itemize}
+
+www.freenas.org
+
+\selectlanguage{english}
+\clearpage
+\end{document}
+
